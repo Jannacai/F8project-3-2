@@ -770,7 +770,11 @@ a {
 	border-radius: 160px;
 	border: 1.5px solid #cecece;
 }
-.futures__item--icon{
+.futures__item:hover {
+	box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+	cursor: pointer;
+}
+.futures__item--icon {
 	margin-top: 60px;
 	display: inline-block;
 }

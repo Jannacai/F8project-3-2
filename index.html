@@ -211,10 +211,10 @@
             <div class="content">
                 <div class="about__content">
                     <article class="about__img">
-                        <div class="box-shawdown1"><img class="about__img--img1" loading="lazy" src="/assets/img/img3.jpeg" alt="zoro">
+                        <div class="box-shawdown1"><img class="about__img--img1" loading="lazy" src="./assets/img/img3.jpeg" alt="zoro">
                         </div>
                         <div class="box-shawdown1">
-                            <img class="about__img--img2" loading="lazy" src="/assets/img/item1.jpeg" alt="zoro">
+                            <img class="about__img--img2" loading="lazy" src="./assets/img/item1.jpeg" alt="zoro">
                             <div class="about__card">
                                 <h3 class="about__card--title">All Desingners</h3>
                                 <p class="about__card--desc">Total Balance</p>
@@ -400,24 +400,15 @@
           
                 item1.addEventListener("mouseover", () => {
                     item1.style.marginTop = "0px";
-                    item1.style.boxShadow="0px 36px 100px 0px rgba(111, 120, 111, 0.20)";
+                  
                 });
                 item1.addEventListener("mouseout", () => {
-                    // item1.style.marginTop = "0px";
-                    item1.removeAttribute("style", "boxShadow");
+                
+                    item1.removeAttribute("style", "marginTop");
                 });
             
 
         });
-
-        // item.addEventListener("mouseout", () => {
-
-        //     item.style.marginTop = "0px";
-        //     item.removeAttribute("style", "boxShadow");
-
-
-        // })
-
 
         const video = document.getElementById("project__video");
         const btnVideo = document.getElementById("btn__video");
