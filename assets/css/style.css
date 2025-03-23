@@ -797,3 +797,118 @@ a {
 	margin-right: auto;
 	line-height: 1.71;
 }
+
+/* ----------------Resourse........... */
+.resourse {
+	padding: 184px 0 102px 0;
+}
+.resourse__title--part {
+	margin-left: 30px;
+	position: relative;
+	color: var(--Primary-color-black, #152427);
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.resourse__title--part::before {
+	content: '';
+	top: 10px;
+	left: -30px;
+	position: absolute;
+	width: 25px;
+	height: 1px;
+	background-color: var(--Primary-color-black-green);
+}
+.resourse__heading {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.resourse__heading--title {
+	position: relative;
+	color: var(--Primary-color-black, #152427);
+	width: 520px;
+	font-size: 4.2rem;
+	font-weight: 600;
+	line-height: 1.23; /* 123.81% */
+}
+.resourse__heading--title::after {
+	content: '';
+	position: absolute;
+	bottom: 15px;
+	right: -5px;
+	width: 82px;
+	height: 3px;
+	background-color: var(--Primary-color-black-green);
+}
+.resourse__heading--desc {
+	color: var(--text-color-light-gray, #7d8188);
+	width: 409px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.62; /* 162.5% */
+}
+
+.resourse__list {
+	margin-top: 90px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+.resourse__item {
+	border-radius: 40px 40px 20px 20px;
+	background-color: #dddcdc;
+}
+.resourse__item:hover {
+	box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+	background-color: #fff;
+	cursor: pointer;
+}
+.resourse__item--img {
+	border-radius: 40px 40px 0px 0px;
+	width: 100%;
+	object-fit: cover;
+}
+.resourse__item--heading {
+	padding: 26px 0 12px 10px;
+}
+.resourse__item--btn {
+	width: 107px;
+	padding: 5px 0;
+	line-height: 16px;
+	border-radius: 20px;
+	border: none;
+	background-color: var(--direction-color);
+	color: #000;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.resourse__item--desc {
+	position: relative;
+	height: 90px;
+	margin-top: 13px;
+	color: var(--Primary-color-black-green, #143c3c);
+	width: 346px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.66; /* 166.667% */
+}
+.resourse__item--desc::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: var(--Primary-color-black-green);
+}
+.resourse__item--date {
+	margin-top: 15px;
+	display: inline-block;
+	margin-left: 250px;
+	color: var(--text-color-black-gray, #575d5e);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 12px; /* 120% */
+}

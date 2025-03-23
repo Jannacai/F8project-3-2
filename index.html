@@ -211,7 +211,8 @@
             <div class="content">
                 <div class="about__content">
                     <article class="about__img">
-                        <div class="box-shawdown1"><img class="about__img--img1" loading="lazy" src="./assets/img/img3.jpeg" alt="zoro">
+                        <div class="box-shawdown1"><img class="about__img--img1" loading="lazy"
+                                src="./assets/img/img3.jpeg" alt="zoro">
                         </div>
                         <div class="box-shawdown1">
                             <img class="about__img--img2" loading="lazy" src="./assets/img/item1.jpeg" alt="zoro">
@@ -386,6 +387,55 @@
                 </div>
             </div>
         </section>
+
+        <!-- ----Resourse ------->
+        <section class="resourse">
+            <div class="content">
+                <div class="resourse__content">
+                    <section class="resourse__title">
+                        <strong class="resourse__title--part">BLOG & ARTICLES</strong>
+                        <div class="resourse__heading">
+                            <h2 class="resourse__heading--title">Take a look at our latest articles and resources</h2>
+                            <p class="resourse__heading--desc">The best agency are the ones ideated with clients. we
+                                corporate your ideas with memorable</p>
+                        </div>
+                    </section>
+
+                    <section class="resourse__list">
+                        <article class="resourse__item">
+                            <img class="resourse__item--img" src="./assets/img/img2.jpg" alt="modular">
+                            <div class="resourse__item--heading">
+                                <button class="resourse__item--btn">STORIES</button>
+                                <p class="resourse__item--desc">What did we learn from nunning over 100 design sprints
+                                    in
+                                    less the year?</p>
+                                <strong class="resourse__item--date">JANUARY 29, 2022</strong>
+                            </div>
+                        </article>
+
+                        <article class="resourse__item">
+                            <img class="resourse__item--img" src="./assets/img/img1.jpg" alt="modular">
+                            <div class="resourse__item--heading">
+                                <button class="resourse__item--btn">STORIES</button>
+                                <p class="resourse__item--desc">The difference between the UI/UX design a simple guide
+                                    for beginner’s</p>
+                                <strong class="resourse__item--date">JANUARY 29, 2022</strong>
+                            </div>
+                        </article>
+
+                        <article class="resourse__item">
+                            <img class="resourse__item--img" src="./assets/img/img3.jpeg" alt="modular">
+                            <div class="resourse__item--heading">
+                                <button class="resourse__item--btn">STORIES</button>
+                                <p class="resourse__item--desc">How marketing can help your business more than anything.
+                                </p>
+                                <strong class="resourse__item--date">JANUARY 29, 2022</strong>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -395,18 +445,17 @@
     <script>
         const item = document.querySelectorAll(".futures__item");
         console.log(item);
-        const isMouse=false;
+
         item.forEach((item1) => {
-          
-                item1.addEventListener("mouseover", () => {
-                    item1.style.marginTop = "0px";
-                  
-                });
-                item1.addEventListener("mouseout", () => {
-                
-                    item1.removeAttribute("style", "marginTop");
-                });
-            
+
+            item1.addEventListener("mouseover", () => {
+                item1.style.marginTop = "0px";
+            });
+            item1.addEventListener("mouseout", () => {
+
+                item1.removeAttribute("style", "marginTop");
+            });
+
 
         });
 
