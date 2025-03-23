@@ -211,10 +211,10 @@
             <div class="content">
                 <div class="about__content">
                     <article class="about__img">
-                        <div class="box-shawdown1"><img class="about__img--img1" src="/assets/img/img3.jpeg" alt="zoro">
+                        <div class="box-shawdown1"><img class="about__img--img1" loading="lazy" src="/assets/img/img3.jpeg" alt="zoro">
                         </div>
                         <div class="box-shawdown1">
-                            <img class="about__img--img2" src="/assets/img/item1.jpeg" alt="zoro">
+                            <img class="about__img--img2" loading="lazy" src="/assets/img/item1.jpeg" alt="zoro">
                             <div class="about__card">
                                 <h3 class="about__card--title">All Desingners</h3>
                                 <p class="about__card--desc">Total Balance</p>
@@ -279,7 +279,8 @@
                             <p class="process__item--desc">
 
                             </p>
-                            <img class="process__item--img" src="./assets/img/process-img.svg" alt="modulars">
+                            <img loading="lazy" class="process__item--img" src="./assets/img/process-img.svg"
+                                alt="modulars">
 
                         </article>
 
@@ -339,8 +340,85 @@
                 </div>
             </div>
         </section>
+
+        <!-- ------Featurs----- -->
+        <section class="futures">
+            <div class="content">
+                <div class="futures__content">
+                    <section class="futures__title">
+                        <h2 class="futures__title--heading">Share the features that help your customers</h2>
+                        <p class="futures__desc">You already know that the customer experience doesn't end with a sale —
+                            it's an ongoing work in progress that companies should be constantly seeking to improve and
+                            iterate on.</p>
+                    </section>
+
+                    <div class="futures__list">
+                        <article id="futures_item" class="futures__item">
+                            <span class="futures__item--icon">
+                                <i class=" icon fa-solid fa-book"></i>
+                            </span>
+                            <h3 class="futures__item--title">Blog</h3>
+                            <p class="futures__item--desc">We’ve researched numerous agencies and complied a list of
+                                digital marketing agency blogs you should read to stay ahead of your rivals and succeed
+                                online!</p>
+                        </article>
+
+                        <article id="futures_item" class="futures__item">
+                            <span class="futures__item--icon">
+                                <i class=" icon fa-solid fa-folder-open"></i>
+                            </span>
+                            <h3 class="futures__item--title">Documention</h3>
+                            <p class="futures__item--desc">We’ve researched numerous agencies and complied a list of
+                                digital marketing agency blogs you should read to stay ahead of your rivals and succeed
+                                online!</p>
+                        </article>
+
+                        <article id="futures_item" class="futures__item">
+                            <span class="futures__item--icon">
+                                <i class="icon fa-solid fa-people-group"></i>
+                            </span>
+                            <h3 class="futures__item--title">Customers</h3>
+                            <p class="futures__item--desc">We’ve researched numerous agencies and complied a list of
+                                digital marketing agency blogs you should read to stay ahead of your rivals and succeed
+                                online!</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+
+
+
+
     <script>
+        const item = document.querySelectorAll(".futures__item");
+        console.log(item);
+        const isMouse=false;
+        item.forEach((item1) => {
+          
+                item1.addEventListener("mouseover", () => {
+                    item1.style.marginTop = "0px";
+                    item1.style.boxShadow="0px 36px 100px 0px rgba(111, 120, 111, 0.20)";
+                });
+                item1.addEventListener("mouseout", () => {
+                    // item1.style.marginTop = "0px";
+                    item1.removeAttribute("style", "boxShadow");
+                });
+            
+
+        });
+
+        // item.addEventListener("mouseout", () => {
+
+        //     item.style.marginTop = "0px";
+        //     item.removeAttribute("style", "boxShadow");
+
+
+        // })
+
+
         const video = document.getElementById("project__video");
         const btnVideo = document.getElementById("btn__video");
 
